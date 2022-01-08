@@ -141,7 +141,7 @@ header {
 
 /* ABOUT */
 .about-background {
-  color: var(--pink);
+  background-color: var(--pink);
 }
 .purple {
   color: var(--purple);
