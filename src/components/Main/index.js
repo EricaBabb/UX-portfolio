@@ -1,10 +1,10 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+// import { Switch, Route } from 'react-router-dom';
 
-import Home from './components/Home';
-import ContactForm from './components/Contact';
-import Work from './components/Work';
-import About from './components/About';
+import Home from '../Home';
+import ContactForm from '../Contact';
+import Work from '../Work';
+import About from '../About';
 
 const Main = () => {
   return (
@@ -13,7 +13,7 @@ const Main = () => {
       <Home />
     </Route>
     <Route exact path="/work" component={Work}>
-      <Works />
+      <Work />
     </Route>
     <Route exact path="/about" component={About}>
       <About />

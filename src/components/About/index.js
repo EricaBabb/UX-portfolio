@@ -1,5 +1,5 @@
 import React from 'react';
-// import color from '../../assets/images/color.jpg';
+import placeholder400x600 from '../../assets/image/400x600.png';
 
 
 
@@ -9,7 +9,7 @@ const About = () => {
       <h1 className="pg-title purple"><em>ABOUT</em></h1>
       <div className="works">
         <div>
-          <img className="abt-img-margin" src="/400x600.png" alt="" />
+          <img className="abt-img-margin" src={placeholder400x600} alt="" />
           <div className="resume-circle"></div>
         </div>
         <p className="abt-p">

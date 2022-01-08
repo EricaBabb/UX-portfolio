@@ -1,5 +1,5 @@
-{
-  "name": "photo-port",
+{"homepage": "https://ericababb.github.io/UX-portfolio",
+  "name": "UX-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
