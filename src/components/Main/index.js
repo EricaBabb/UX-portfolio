@@ -8,20 +8,12 @@ import About from '../About';
 
 const Main = () => {
   return (
-    <Switch>
-    <Route exact path="/home" component={Home}>
-      <Home />
-    </Route>
-    <Route exact path="/work" component={Work}>
-      <Work />
-    </Route>
-    <Route exact path="/about" component={About}>
-      <About />
-    </Route>
-    <Route exact path="/contact" component={ContactForm}>
-      <ContactForm />
-    </Route>
-  </Switch>
+    <main>
+    <Home></Home>
+    <Work></Work>
+    <About></About>
+    <ContactForm></ContactForm>
+    </main>
   );
 }
 
