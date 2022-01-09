@@ -10,7 +10,10 @@ const About = () => {
       <div className="works">
         <div>
           <img className="abt-img-margin" src={placeholder400x600} alt="" />
-          <div className="resume-circle"></div>
+          <a href="/EricaResume.pdf" download>
+          <div className="resume-circle">
+          </div>
+          </a>
         </div>
         <p className="abt-p">
           I am Erica Babb. Butler full stack web developer bootcamp student,

@@ -36,27 +36,29 @@ function ContactForm() {
   };
 
   return (
-    <div>
+    <div className='contact-main'>
+      <h1 className="pg-title mb-1" style={{textAlign:"right"}}><em>CONTACT US</em></h1>
+
       <div className="form-center">
     <form id="contact-form" onSubmit={handleSubmit}>
         <div className=".form-floating mb-3">
           <label for="exampleInputEmail1" className="form-label">Email address</label>
-          <input type="email" name="email" className="form-control" id="exampleInputEmail1" defaultValue={email} onBlur={handleChange} />
+          <input type="email" name="email" placeholder='Email' required className="form-control p-3" id="exampleInputEmail1" defaultValue={email} onChange={handleChange} />
         </div>
         <div className=".form-floating mb-3">
           <label for="exampleInputName" className="form-label">Name</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} class="form-control" id="exampleInputName"/>
+          <input type="text" defaultValue={name} placeholder='Name'  onChange={handleChange} class="form-control p-3" id="exampleInputName"/>
         </div>
         <div className=".form-floating  mb-3">
           <label for="exampleInputMessage" class="form-label">Message</label>
-          <input type="text" className="form-control message-control" name="message" id="exampleInputMessage" defaultValue={message} onBlur={handleChange}/>
+          <input type="text" placeholder='Message' required className="form-control message-control p-4" name="message" id="exampleInputMessage" defaultValue={message} onBlur={handleChange}/>
         </div>
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error-text" style={{color:"red",fontWeight:"bold"}}>*{errorMessage}</p>
           </div>
         )}
-        <button type="submit" class="btn my-btn">Submit</button>
+        <button type="submit" className="btnn">Submit</button>
       </form>
       </div>
 </div>

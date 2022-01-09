@@ -170,6 +170,27 @@ header {
 }
 
 /* CONTACT */
-.contact-background {
-  color: var(--purple);
+.contact-main {
+  background-color: var(--yellow);
+  /* display: flex; */
+  align-items: center;
+}
+.form-center{
+  margin: 30px;
+  margin-top: 60px;
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-label{
+  font-size: x-large;
+}
+.btnn{
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-size: x-large;
 }
