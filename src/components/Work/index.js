@@ -1,12 +1,11 @@
 import React from 'react';
-// import color from '../../assets/images/color.jpg';
 
 
 
 const Work = () => {
   return (
 <section className="work-background" idName="work">
-      <h1 className="pg-title"><em>WORK</em></h1>
+      <h1 className="pg-title blue"><em>WORK</em></h1>
 
       <div className="works">
         <div className="left-works work-margin-btm">

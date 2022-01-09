@@ -167,30 +167,50 @@ header {
   font-family: Argumentum Light;
   font-size: 7vh;
   color: var(--black);
+  margin-bottom: 12vh;
 }
 
 /* CONTACT */
-.contact-main {
+.contact-background {
   background-color: var(--yellow);
-  /* display: flex; */
-  align-items: center;
 }
-.form-center{
-  margin: 30px;
-  margin-top: 60px;
-  /* padding: 20px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.magenta {
+  color: var(--magenta);
 }
-.form-label{
-  font-size: x-large;
+.form-center {
+  /* display: flex !important; */
+  /* justify-content: flex-start !important; */
+  margin-left: 10vw;
+  padding-bottom: 5vh;
 }
-.btnn{
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  color: white;
-  background-color: black;
-  font-size: x-large;
+.form-label {
+  font-family: Argumentum;
+  font-size: 20px;
+  color: var(--black);
+}
+.form-control {
+  width: 400px !important;
+  font-family: Argumentum Light;
+  border-width: 2px !important;
+  border-color: var(--blue) !important;
+}
+.message-control {
+  height: 100px;
+}
+.error-text {
+  font-size: 20px;
+  font-family: Argumentum Light;
+}
+
+.my-btn {
+  font-family: Argumentum Light;
+  font-size: 20px !important;
+  color: var(--magenta);
+  background-color: var(--magenta) !important;
+  margin-left: 11vw;
+}
+
+.my-btn:hover {
+  opacity: 0.75;
 }

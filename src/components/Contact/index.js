@@ -1,3 +1,4 @@
+import { bottom } from '@popperjs/core';
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helper';
 
@@ -36,8 +37,9 @@ function ContactForm() {
   };
 
   return (
-    <div className='contact-main'>
-      <h1 className="pg-title mb-1" style={{textAlign:"right"}}><em>CONTACT US</em></h1>
+    <section className="contact-background" idName="contact">
+    <div>
+      <h1 className="pg-title mb-1 magenta"><em>CONTACT</em></h1>
 
       <div className="form-center">
     <form id="contact-form" onSubmit={handleSubmit}>
@@ -58,10 +60,11 @@ function ContactForm() {
             <p className="error-text" style={{color:"red",fontWeight:"bold"}}>*{errorMessage}</p>
           </div>
         )}
-        <button type="submit" className="btnn">Submit</button>
+        <button type="submit" className="btn my-btn">Submit</button>
       </form>
       </div>
 </div>
+</section>
   );
 }
 
