@@ -1,5 +1,5 @@
 import React from 'react';
-import placeholder400x600 from '../../assets/image/400x600.png';
+import pic from '../../assets/image/BodagaBay.jpg';
 
 
 
@@ -9,17 +9,23 @@ const About = () => {
       <h1 className="pg-title purple"><em>ABOUT</em></h1>
       <div className="works">
         <div>
-          <img className="abt-img-margin" src={placeholder400x600} alt="" />
+          <img className="abt-img-margin" src={pic} alt="" />
           <a href="/EricaResume.pdf" download>
           <div className="resume-circle">
           </div>
           </a>
         </div>
         <p className="abt-p">
-          I am Erica Babb. Butler full stack web developer bootcamp student,
-          while also attending IUPUI full-time pursuing a major in web
-          development and minors in informatics and biology. A baker, aspiring
-          bodybuilder, and a love for fashion and cats.
+Hello!
+<br></br>
+<br></br>
+I'm Erica Babb:
+<br></br>
+<br></br>
+Passionate UX Designer working on my degree in Media Arts and Science with a triple minor in graphic design, biology, and informatics. 
+<br></br>
+<br></br>
+A zealous baker, amateur bodybuilder, and a love for fashion and cats. 
         </p>
       </div>
 

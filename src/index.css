@@ -11,6 +11,7 @@
 :root {
   --blue: #5fbfb2;
   --yellow: #ebb000;
+  --light-yellow: #fbe4ab;
   --orange: #f86e00;
   --magenta: #b21491;
   --purple: #744299;
@@ -27,7 +28,8 @@
 
 /* NAV */
 header {
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
+  background-color: var(--light-yellow);
 }
 .nav-bar {
   display: flex;
@@ -45,16 +47,17 @@ header {
   color: var(--purple) !important;
 }
 
-.nav-bar span {
-  height: 45px;
-  width: 45px;
-  background-color: #0d0b2e;
+.logo {
+  height: 80px;
+  width: 80px;
+  margin-top: -20px;
   border-radius: 50%;
 }
 
 /* HOME */
 .home-main {
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
+  background-color: var(--light-yellow);
   display: flex;
   align-items: center;
 }
@@ -88,7 +91,8 @@ header {
 /* WORK */
 
 .work-background {
-  background-color: var(--orange);
+  /* background-color: var(--orange); */
+  background-color: var(--light-yellow);
 }
 
 .works {
@@ -141,7 +145,8 @@ header {
 
 /* ABOUT */
 .about-background {
-  background-color: var(--pink);
+  /* background-color: var(--pink); */
+  background-color: var(--light-yellow);
 }
 .purple {
   color: var(--purple);
@@ -149,6 +154,11 @@ header {
 
 .abt-img-margin {
   margin-right: 4vw;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  opacity: 0.88;
+  border: 1px solid var(--black);
 }
 
 .resume-circle {
@@ -163,38 +173,63 @@ header {
 }
 
 .abt-p {
-  margin: 5vh 10vw 0vh 10vw;
+  margin: 10vh 10vw 45vh 10vw;
   font-family: Argumentum Light;
-  font-size: 7vh;
+  font-size: 4vh;
   color: var(--black);
-  margin-bottom: 12vh;
+  /* margin-bottom: 45vh; */
 }
 
 /* CONTACT */
 .contact-background {
-  background-color: var(--yellow);
+  /* background-color: var(--yellow); */
+  background-color: var(--light-yellow);
 }
 
 .magenta {
   color: var(--magenta);
 }
-.form-center {
-  /* display: flex !important; */
-  /* justify-content: flex-start !important; */
-  margin-left: 10vw;
-  padding-bottom: 5vh;
+
+.form-container {
+  position: relative;
+  left: 20%;
+  width: 60%;
+  height: 100vh;
+  /* background-color: white; */
+  background-color: var(--light-yellow);
 }
-.form-label {
-  font-family: Argumentum;
-  font-size: 20px;
-  color: var(--black);
+
+.contact-form {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 600px;
 }
-.form-control {
-  width: 400px !important;
-  font-family: Argumentum Light;
-  border-width: 2px !important;
-  border-color: var(--blue) !important;
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 2rem !important;
+  border: none;
+  background-color: var(--light-yellow);
+  border-bottom: 2px solid var(--magenta);
+  font-family: Argumentum Thin;
 }
+
+.submit {
+  border: 1px solid var(--magenta);
+  padding: 1rem;
+  text-align: center;
+  /* background-color: white; */
+  background-color: var(--light-yellow);
+  cursor: pointer;
+}
+
+.submit:hover {
+  opacity: 0.6;
+}
+
 .message-control {
   height: 100px;
 }
@@ -203,14 +238,23 @@ header {
   font-family: Argumentum Light;
 }
 
-.my-btn {
-  font-family: Argumentum Light;
-  font-size: 20px !important;
-  color: var(--magenta);
-  background-color: var(--magenta) !important;
-  margin-left: 11vw;
+/* Footer */
+
+#octo-extension-root {
+  background-color: var(--light-yellow) !important;
 }
 
-.my-btn:hover {
-  opacity: 0.75;
+.yellow {
+  background-color: var(--light-yellow);
+}
+
+footer {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: -10px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
 }

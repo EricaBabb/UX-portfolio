@@ -1,4 +1,3 @@
-import { bottom } from '@popperjs/core';
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helper';
 
@@ -41,26 +40,17 @@ function ContactForm() {
     <div>
       <h1 className="pg-title mb-1 magenta"><em>CONTACT</em></h1>
 
-      <div className="form-center">
-    <form id="contact-form" onSubmit={handleSubmit}>
-        <div className=".form-floating mb-3">
-          <label for="exampleInputEmail1" className="form-label">Email address</label>
-          <input type="email" name="email" placeholder='Email' required className="form-control p-3" id="exampleInputEmail1" defaultValue={email} onChange={handleChange} />
-        </div>
-        <div className=".form-floating mb-3">
-          <label for="exampleInputName" className="form-label">Name</label>
-          <input type="text" defaultValue={name} placeholder='Name'  onChange={handleChange} class="form-control p-3" id="exampleInputName"/>
-        </div>
-        <div className=".form-floating  mb-3">
-          <label for="exampleInputMessage" class="form-label">Message</label>
-          <input type="text" placeholder='Message' required className="form-control message-control p-4" name="message" id="exampleInputMessage" defaultValue={message} onBlur={handleChange}/>
-        </div>
+      <div className="form-container">
+    <form class="contact-form" onSubmit={handleSubmit}>
+          <input type="text" defaultValue={name} placeholder='Full Name'  onChange={handleChange} /><br></br>
+          <input type="email" defaultValue={email} placeholder='Email'  onChange={handleChange} /><br></br>
+          <textarea id="message" placeholder="Message" required cols="30" rows="10" id="exampleInputMessage" defaultValue={message} onBlur={handleChange}></textarea>
+          <input type="submit" className="submit" value="Send Message" />
         {errorMessage && (
           <div>
             <p className="error-text" style={{color:"red",fontWeight:"bold"}}>*{errorMessage}</p>
           </div>
         )}
-        <button type="submit" className="btn my-btn">Submit</button>
       </form>
       </div>
 </div>

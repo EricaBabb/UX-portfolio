@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assets/image/logo.png';
 
 function Nav() {
 
@@ -6,7 +7,7 @@ function Nav() {
     <header class="nav-bar">
     <a href="">Home</a>
     <a href="">Work</a>
-    <span>logo</span>
+    <img className="logo" src={logo} alt="" />
     <a href="">About</a>
     <a href="">Contact</a>
     </header>
